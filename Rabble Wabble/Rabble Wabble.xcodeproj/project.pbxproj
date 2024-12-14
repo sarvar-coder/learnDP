@@ -11,9 +11,17 @@
 		5E2D9F8F2D0ACDBD00C7A10E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E2D9F8E2D0ACDBD00C7A10E /* SceneDelegate.swift */; };
 		5E2D9F912D0ACDBD00C7A10E /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E2D9F902D0ACDBD00C7A10E /* QuestionViewController.swift */; };
 		5E2D9F942D0ACDBD00C7A10E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E2D9F922D0ACDBD00C7A10E /* Main.storyboard */; };
-		5E2D9F962D0ACDC000C7A10E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E2D9F952D0ACDC000C7A10E /* Assets.xcassets */; };
-		5E2D9F992D0ACDC000C7A10E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E2D9F972D0ACDC000C7A10E /* LaunchScreen.storyboard */; };
 		5E2D9FA72D0AD0C000C7A10E /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E2D9FA62D0AD0C000C7A10E /* Question.swift */; };
+		5E2D9FA92D0AD12500C7A10E /* QuestionGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E2D9FA82D0AD12500C7A10E /* QuestionGroup.swift */; };
+		5E2D9FAB2D0AD1AF00C7A10E /* QuestionGroupData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E2D9FAA2D0AD1AF00C7A10E /* QuestionGroupData.swift */; };
+		5E2D9FAD2D0AD1DB00C7A10E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E2D9FAC2D0AD1DB00C7A10E /* Assets.xcassets */; };
+		5E2D9FAF2D0AD1E700C7A10E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E2D9FAE2D0AD1E700C7A10E /* LaunchScreen.storyboard */; };
+		5E2D9FB12D0ADECB00C7A10E /* QuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E2D9FB02D0ADECB00C7A10E /* QuestionView.swift */; };
+		5E2EA9222D0C1086006B77C9 /* SelectQuestionGroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E2EA9212D0C1086006B77C9 /* SelectQuestionGroupViewController.swift */; };
+		5E2EA9242D0C1130006B77C9 /* QuestionGroupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E2EA9232D0C1130006B77C9 /* QuestionGroupCell.swift */; };
+		5E2EA9272D0D4C39006B77C9 /* QuestionStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E2EA9262D0D4C39006B77C9 /* QuestionStrategy.swift */; };
+		5E2EA9292D0D4CB9006B77C9 /* SequentialQuestionStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E2EA9282D0D4CB9006B77C9 /* SequentialQuestionStrategy.swift */; };
+		5E2EA92B2D0D4D47006B77C9 /* RandomQuestionStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E2EA92A2D0D4D47006B77C9 /* RandomQuestionStrategy.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,10 +30,18 @@
 		5E2D9F8E2D0ACDBD00C7A10E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		5E2D9F902D0ACDBD00C7A10E /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
 		5E2D9F932D0ACDBD00C7A10E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		5E2D9F952D0ACDC000C7A10E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		5E2D9F982D0ACDC000C7A10E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5E2D9F9A2D0ACDC000C7A10E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5E2D9FA62D0AD0C000C7A10E /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		5E2D9FA82D0AD12500C7A10E /* QuestionGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionGroup.swift; sourceTree = "<group>"; };
+		5E2D9FAA2D0AD1AF00C7A10E /* QuestionGroupData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionGroupData.swift; sourceTree = "<group>"; };
+		5E2D9FAC2D0AD1DB00C7A10E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5E2D9FAE2D0AD1E700C7A10E /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5E2D9FB02D0ADECB00C7A10E /* QuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionView.swift; sourceTree = "<group>"; };
+		5E2EA9212D0C1086006B77C9 /* SelectQuestionGroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectQuestionGroupViewController.swift; sourceTree = "<group>"; };
+		5E2EA9232D0C1130006B77C9 /* QuestionGroupCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionGroupCell.swift; sourceTree = "<group>"; };
+		5E2EA9262D0D4C39006B77C9 /* QuestionStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionStrategy.swift; sourceTree = "<group>"; };
+		5E2EA9282D0D4CB9006B77C9 /* SequentialQuestionStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SequentialQuestionStrategy.swift; sourceTree = "<group>"; };
+		5E2EA92A2D0D4D47006B77C9 /* RandomQuestionStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomQuestionStrategy.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +78,7 @@
 				5E2D9FA12D0ACE4400C7A10E /* Controllers */,
 				5E2D9FA22D0ACE5700C7A10E /* Models */,
 				5E2D9FA52D0ACEA600C7A10E /* Resources */,
+				5E2EA9252D0D4C00006B77C9 /* Strategies */,
 				5E2D9FA32D0ACE6100C7A10E /* Views */,
 			);
 			path = "Rabble Wabble";
@@ -80,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				5E2D9F902D0ACDBD00C7A10E /* QuestionViewController.swift */,
+				5E2EA9212D0C1086006B77C9 /* SelectQuestionGroupViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -88,6 +106,8 @@
 			isa = PBXGroup;
 			children = (
 				5E2D9FA62D0AD0C000C7A10E /* Question.swift */,
+				5E2D9FA82D0AD12500C7A10E /* QuestionGroup.swift */,
+				5E2D9FAA2D0AD1AF00C7A10E /* QuestionGroupData.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -96,7 +116,9 @@
 			isa = PBXGroup;
 			children = (
 				5E2D9F922D0ACDBD00C7A10E /* Main.storyboard */,
-				5E2D9F972D0ACDC000C7A10E /* LaunchScreen.storyboard */,
+				5E2D9FAE2D0AD1E700C7A10E /* LaunchScreen.storyboard */,
+				5E2D9FB02D0ADECB00C7A10E /* QuestionView.swift */,
+				5E2EA9232D0C1130006B77C9 /* QuestionGroupCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -104,10 +126,20 @@
 		5E2D9FA52D0ACEA600C7A10E /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				5E2D9F952D0ACDC000C7A10E /* Assets.xcassets */,
+				5E2D9FAC2D0AD1DB00C7A10E /* Assets.xcassets */,
 				5E2D9F9A2D0ACDC000C7A10E /* Info.plist */,
 			);
 			name = Resources;
+			sourceTree = "<group>";
+		};
+		5E2EA9252D0D4C00006B77C9 /* Strategies */ = {
+			isa = PBXGroup;
+			children = (
+				5E2EA9262D0D4C39006B77C9 /* QuestionStrategy.swift */,
+				5E2EA9282D0D4CB9006B77C9 /* SequentialQuestionStrategy.swift */,
+				5E2EA92A2D0D4D47006B77C9 /* RandomQuestionStrategy.swift */,
+			);
+			path = Strategies;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -168,8 +200,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5E2D9F992D0ACDC000C7A10E /* LaunchScreen.storyboard in Resources */,
-				5E2D9F962D0ACDC000C7A10E /* Assets.xcassets in Resources */,
+				5E2D9FAF2D0AD1E700C7A10E /* LaunchScreen.storyboard in Resources */,
+				5E2D9FAD2D0AD1DB00C7A10E /* Assets.xcassets in Resources */,
 				5E2D9F942D0ACDBD00C7A10E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -184,6 +216,14 @@
 				5E2D9F912D0ACDBD00C7A10E /* QuestionViewController.swift in Sources */,
 				5E2D9FA72D0AD0C000C7A10E /* Question.swift in Sources */,
 				5E2D9F8D2D0ACDBD00C7A10E /* AppDelegate.swift in Sources */,
+				5E2D9FB12D0ADECB00C7A10E /* QuestionView.swift in Sources */,
+				5E2D9FAB2D0AD1AF00C7A10E /* QuestionGroupData.swift in Sources */,
+				5E2EA9242D0C1130006B77C9 /* QuestionGroupCell.swift in Sources */,
+				5E2EA9292D0D4CB9006B77C9 /* SequentialQuestionStrategy.swift in Sources */,
+				5E2EA92B2D0D4D47006B77C9 /* RandomQuestionStrategy.swift in Sources */,
+				5E2EA9272D0D4C39006B77C9 /* QuestionStrategy.swift in Sources */,
+				5E2D9FA92D0AD12500C7A10E /* QuestionGroup.swift in Sources */,
+				5E2EA9222D0C1086006B77C9 /* SelectQuestionGroupViewController.swift in Sources */,
 				5E2D9F8F2D0ACDBD00C7A10E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -197,14 +237,6 @@
 				5E2D9F932D0ACDBD00C7A10E /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		5E2D9F972D0ACDC000C7A10E /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5E2D9F982D0ACDC000C7A10E /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
