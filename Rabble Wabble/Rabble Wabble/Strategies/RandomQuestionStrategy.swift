@@ -8,7 +8,7 @@
 import Foundation
 // 1
 import GameplayKit.GKRandomSource
-
+// Concrete Strategy - 2
 public class RandomQuestionStrategy: QuestionStrategy {
     
     // MARK: - Properties

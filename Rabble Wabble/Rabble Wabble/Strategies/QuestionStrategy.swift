@@ -6,7 +6,7 @@
 //
 
 import Foundation
-
+// Strategy Protocol 
 public protocol QuestionStrategy: AnyObject {
     // 1
     var title: String { get }

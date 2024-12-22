@@ -6,7 +6,7 @@
 //
 
 import Foundation
-
+    // Concrete Strategy - 1
 public class SequentialQuestionStrategy: QuestionStrategy {
     
     // MARK: - Properties
