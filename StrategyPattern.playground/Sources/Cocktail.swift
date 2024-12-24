@@ -5,7 +5,7 @@ public class CocktailClient: OrderingStarategy {
     
     public init() { }
     
-    public func fetch<Response: Codable>(handler: @escaping (Result<Response, Error>) -> Void) {
+    public func fetch(handler: @escaping (Result<[OrderItem], Error>) -> Void) {
         
         guard let url = URL(string: "https://www.thecocktaildb.com/api/json/v1/1/random.php") else { return }
         
@@ -22,8 +22,9 @@ public class CocktailClient: OrderingStarategy {
                 guard let data = data else { return }
                 
                 do {
-                    let result = try JSONDecoder().decode(Response.self, from: data)
-                    handler(.success(result))
+                    let result = try JSONDecoder().decode(Cocktail.self, from: data)
+                    let items = result.drinks.map { OrderItem(title: $0.strDrink) }
+                    handler(.success(items))
                 } catch {
                     handler(.failure(error))
                 }
@@ -33,17 +34,11 @@ public class CocktailClient: OrderingStarategy {
 }
 
 public struct Cocktail: Codable {
-    public let drinks: [Drink]
     
-    public init(drinks: [Drink]) {
-        self.drinks = drinks
-    }
+    public let drinks: [Drink]  
 }
 
 public struct Drink: Codable {
-    public let strDrink: String
     
-    public init(strDrink: String) {
-        self.strDrink = strDrink
-    }
+    public let strDrink: String
 }

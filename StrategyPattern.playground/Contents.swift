@@ -10,19 +10,26 @@ public class Cheff {
     
    public var order: OrderingStarategy!
     
-   public init(order: OrderingStarategy) {
+    public init(order: OrderingStarategy) {
         self.order = order
     }
     
-//    func fetch() {
-//        order.fetch { result in
-//            switch result {
-//            case .success(let success): break
-//            
-//            case .failure(let failure): break
-//            }
-//        }
-//    }
+    func fetch() {
+        order.fetch { result in
+            switch result {
+            case .success(let success): 
+                print(success[0].title)
+            case .failure(let error):
+                print(error.localizedDescription)
+            }
+        }
+    }
 }  
 
 let nusret = Cheff(order: TodaysMealClient())
+let cznburak = Cheff(order: CocktailClient())
+
+nusret.fetch()
+cznburak.fetch()
+
+

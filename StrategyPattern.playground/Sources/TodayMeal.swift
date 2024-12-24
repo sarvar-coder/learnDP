@@ -4,7 +4,7 @@ public class TodaysMealClient: OrderingStarategy {
     
     public init() { }
 
-    public func fetch<Response: Codable>(handler: @escaping (Result<Response, Error>) -> Void) {
+    public func fetch(handler: @escaping (Result<[OrderItem], Error>) -> Void) {
         guard let url = URL(string: "https://www.themealdb.com/api/json/v1/1/random.php")
         else { return }
         
@@ -16,13 +16,15 @@ public class TodaysMealClient: OrderingStarategy {
                 
                 guard let httpResponse = response as? HTTPURLResponse,
                       httpResponse.statusCode == 200
+   
                 else { return }
                 
-                guard let data = data else { return }
+               guard let data = data else { return }
                 
                 do {
-                    let result = try JSONDecoder().decode(Response.self, from: data)
-                    handler(.success(result))
+                    let result = try JSONDecoder().decode(Recipe.self, from: data)
+                    let items = result.meals.map { OrderItem(title: $0.strMeal) }
+                    handler(.success(items))
                 } catch {
                     handler(.failure(error))
                 }
@@ -34,17 +36,9 @@ public class TodaysMealClient: OrderingStarategy {
 public struct Recipe: Codable {
     
     public let meals: [Meal]
-    
-    public init(meals: [Meal]) {
-        self.meals = meals
-    }
 }
 
 public struct Meal: Codable {
     
     public let strMeal: String
-    
-    public init(strMeal: String) {
-        self.strMeal = strMeal
-    }
 }

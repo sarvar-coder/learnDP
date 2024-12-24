@@ -1,6 +1,11 @@
 import Foundation
 
 public protocol OrderingStarategy {
-    func fetch<Response: Codable>(handler: @escaping(Result<Response, Error>) -> Void)
+    func fetch(handler: @escaping(Result<[OrderItem], Error>) -> Void)
+}
+
+public struct OrderItem {
+    
+    public let title: String    
 }
 
