@@ -6,6 +6,7 @@
 ## User settings
 xcuserdata/
 .DS_Store
+Rabble Wabble/.DS_Store
 ## Obj-C/Swift specific
 *.hmap
 
