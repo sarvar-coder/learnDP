@@ -41,7 +41,6 @@ public class AppSettingsViewController: UITableViewController {
             cell.accessoryType = .none
         }
         
-//        cell.accessoryType = .checkmark
         return cell
     }
     
