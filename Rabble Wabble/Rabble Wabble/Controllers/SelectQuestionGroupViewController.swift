@@ -29,6 +29,24 @@ public class SelectQuestionGroupViewController: UIViewController {
     }
     
     private let appSettings = AppSettings.shared
+    
+    public override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+    
+    public override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        consoleLog()
+    }
+    
+    private func consoleLog() {
+        questionGroups.forEach {
+            print("\($0.title): " +
+                  "correctCount \($0.score.correctCount), " +
+                  "incorrectCount \($0.score.incorrectCount)"
+            )
+        }
+    }
 }
 
 // MARK: - UITableViewDataSource
@@ -70,7 +88,7 @@ extension SelectQuestionGroupViewController: UITableViewDelegate
                                  sender: Any?) {
         guard let viewController = segue.destination
                 as? QuestionViewController else { return }
-        viewController.questionStrategy = appSettings.questionStrategy(for: selectedQuestionGroup)
+        viewController.questionStrategy = appSettings.questionStrategy(for: questionGroupCaretaker)
         viewController.delegate = self
     }
 }

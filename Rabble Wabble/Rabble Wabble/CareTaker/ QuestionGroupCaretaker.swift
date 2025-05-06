@@ -35,7 +35,8 @@ public final class QuestionGroupCaretaker {
             self.questionGroups = try!
             DiskCaretaker.retrieve([QuestionGroup].self, from: url)
             try! save()
-        } }
+        }
+    }
     
     // MARK: - Instance Methods
     // 5
