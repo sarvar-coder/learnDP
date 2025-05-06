@@ -26,6 +26,7 @@
 		5E7B04F12D3520270072CC7C /* DiskCaretaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7B04F02D3520270072CC7C /* DiskCaretaker.swift */; };
 		5E7B04F32D3521B80072CC7C /*  QuestionGroupCaretaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7B04F22D3521B80072CC7C /*  QuestionGroupCaretaker.swift */; };
 		5E7B04F52D3628980072CC7C /* QuestionGroupData.json in Resources */ = {isa = PBXBuildFile; fileRef = 5E7B04F42D3628980072CC7C /* QuestionGroupData.json */; };
+		5EEE57552DC9B47300A4A836 /* BaseQuestionStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEE57542DC9B47300A4A836 /* BaseQuestionStrategy.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		5E7B04F02D3520270072CC7C /* DiskCaretaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiskCaretaker.swift; sourceTree = "<group>"; };
 		5E7B04F22D3521B80072CC7C /*  QuestionGroupCaretaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " QuestionGroupCaretaker.swift"; sourceTree = "<group>"; };
 		5E7B04F42D3628980072CC7C /* QuestionGroupData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = QuestionGroupData.json; sourceTree = "<group>"; };
+		5EEE57542DC9B47300A4A836 /* BaseQuestionStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseQuestionStrategy.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,8 +84,8 @@
 		5E2D9F8B2D0ACDBD00C7A10E /* Rabble Wabble */ = {
 			isa = PBXGroup;
 			children = (
-				5E7B04EF2D351FCF0072CC7C /* CareTaker */,
 				5E2D9FA02D0ACE3600C7A10E /* AppDelegate */,
+				5E7B04EF2D351FCF0072CC7C /* CareTaker */,
 				5E2D9FA12D0ACE4400C7A10E /* Controllers */,
 				5E2D9FA22D0ACE5700C7A10E /* Models */,
 				5E2D9FA52D0ACEA600C7A10E /* Resources */,
@@ -115,9 +117,9 @@
 		5E2D9FA22D0ACE5700C7A10E /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				5E5E27C32D1160E400C4DE54 /* AppSettings.swift */,
 				5E2D9FA62D0AD0C000C7A10E /* Question.swift */,
 				5E2D9FA82D0AD12500C7A10E /* QuestionGroup.swift */,
-				5E5E27C32D1160E400C4DE54 /* AppSettings.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -149,6 +151,7 @@
 				5E2EA9262D0D4C39006B77C9 /* QuestionStrategy.swift */,
 				5E2EA9282D0D4CB9006B77C9 /* SequentialQuestionStrategy.swift */,
 				5E2EA92A2D0D4D47006B77C9 /* RandomQuestionStrategy.swift */,
+				5EEE57542DC9B47300A4A836 /* BaseQuestionStrategy.swift */,
 			);
 			path = Strategies;
 			sourceTree = "<group>";
@@ -245,6 +248,7 @@
 				5E2EA9272D0D4C39006B77C9 /* QuestionStrategy.swift in Sources */,
 				5E2D9FA92D0AD12500C7A10E /* QuestionGroup.swift in Sources */,
 				5E5E27C62D1163BD00C4DE54 /* AppSettingsViewController.swift in Sources */,
+				5EEE57552DC9B47300A4A836 /* BaseQuestionStrategy.swift in Sources */,
 				5E2EA9222D0C1086006B77C9 /* SelectQuestionGroupViewController.swift in Sources */,
 				5E7B04F12D3520270072CC7C /* DiskCaretaker.swift in Sources */,
 				5E2D9F8F2D0ACDBD00C7A10E /* SceneDelegate.swift in Sources */,
