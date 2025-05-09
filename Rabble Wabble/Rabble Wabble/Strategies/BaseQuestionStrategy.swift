@@ -34,8 +34,7 @@ public class BaseQuestionStrategy: QuestionStrategy {
         self.questionGroupCareTaker = questionGroupCareTaker
         self.questions = questions
         
-        self.questionGroupCareTaker.selectedQuestionGroup.score = QuestionGroup.Score()
-        
+        self.questionGroupCareTaker.selectedQuestionGroup.score.reset()
     }
     
     // MARK: - QuestionStrategy

@@ -64,6 +64,14 @@ extension SelectQuestionGroupViewController:
             withIdentifier: "QuestionGroupCell") as! QuestionGroupCell
         let questionGroup = questionGroups[indexPath.row]
         cell.titleLabel.text = questionGroup.title
+        
+        cell.percentageSubscriber =
+        questionGroup.score.$runningPercentage
+            .receive(on: DispatchQueue.main)
+            .map() {
+                return String(format: "%.0f %%", round($0 * 100))
+            }.assign(to: \.text, on: cell.percentageLabel)
+        
         return cell
     }
 }
@@ -96,6 +104,7 @@ extension SelectQuestionGroupViewController: UITableViewDelegate
 extension SelectQuestionGroupViewController: QuestionViewControllerDelegate {
     
     public func questionViewController(_ viewController: QuestionViewController, didCancel questionGroup: QuestionStrategy) {
+        print(questionGroup)
         navigationController?.popToViewController(self, animated: true)
     }
     
