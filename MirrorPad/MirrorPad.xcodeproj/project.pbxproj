@@ -15,6 +15,11 @@
 		5E973F952E06712500D8F1D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E973F932E06712500D8F1D9 /* Main.storyboard */; };
 		5E973F962E06712500D8F1D9 /* LineShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E973F912E06712500D8F1D9 /* LineShape.swift */; };
 		5E973F972E06712500D8F1D9 /* DrawView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E973F8E2E06712500D8F1D9 /* DrawView.swift */; };
+		5E973FFC2E07C93800D8F1D9 /* CopyState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E973FF92E07C93800D8F1D9 /* CopyState.swift */; };
+		5E973FFD2E07C93800D8F1D9 /* AcceptInputState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E973FF62E07C93800D8F1D9 /* AcceptInputState.swift */; };
+		5E973FFE2E07C93800D8F1D9 /* ClearState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E973FF82E07C93800D8F1D9 /* ClearState.swift */; };
+		5E973FFF2E07C93800D8F1D9 /* AnimateState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E973FF72E07C93800D8F1D9 /* AnimateState.swift */; };
+		5E9740002E07C93800D8F1D9 /* DrawViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E973FFA2E07C93800D8F1D9 /* DrawViewState.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +33,11 @@
 		5E973F8F2E06712500D8F1D9 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5E973F912E06712500D8F1D9 /* LineShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineShape.swift; sourceTree = "<group>"; };
 		5E973F922E06712500D8F1D9 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5E973FF62E07C93800D8F1D9 /* AcceptInputState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcceptInputState.swift; sourceTree = "<group>"; };
+		5E973FF72E07C93800D8F1D9 /* AnimateState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimateState.swift; sourceTree = "<group>"; };
+		5E973FF82E07C93800D8F1D9 /* ClearState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClearState.swift; sourceTree = "<group>"; };
+		5E973FF92E07C93800D8F1D9 /* CopyState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CopyState.swift; sourceTree = "<group>"; };
+		5E973FFA2E07C93800D8F1D9 /* DrawViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawViewState.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +107,7 @@
 		5E973F8A2E0670C100D8F1D9 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				5E973FFB2E07C93800D8F1D9 /* States */,
 				5E973F8E2E06712500D8F1D9 /* DrawView.swift */,
 				5E973F902E06712500D8F1D9 /* LaunchScreen.storyboard */,
 				5E973F912E06712500D8F1D9 /* LineShape.swift */,
@@ -111,6 +122,18 @@
 				5E973F8C2E0670F100D8F1D9 /* Copying.swift */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		5E973FFB2E07C93800D8F1D9 /* States */ = {
+			isa = PBXGroup;
+			children = (
+				5E973FF62E07C93800D8F1D9 /* AcceptInputState.swift */,
+				5E973FF72E07C93800D8F1D9 /* AnimateState.swift */,
+				5E973FF82E07C93800D8F1D9 /* ClearState.swift */,
+				5E973FF92E07C93800D8F1D9 /* CopyState.swift */,
+				5E973FFA2E07C93800D8F1D9 /* DrawViewState.swift */,
+			);
+			path = States;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -187,6 +210,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E973FFC2E07C93800D8F1D9 /* CopyState.swift in Sources */,
+				5E973FFD2E07C93800D8F1D9 /* AcceptInputState.swift in Sources */,
+				5E973FFE2E07C93800D8F1D9 /* ClearState.swift in Sources */,
+				5E973FFF2E07C93800D8F1D9 /* AnimateState.swift in Sources */,
+				5E9740002E07C93800D8F1D9 /* DrawViewState.swift in Sources */,
 				5E973F852E06709900D8F1D9 /* AppDelegate.swift in Sources */,
 				5E973F8D2E0670F100D8F1D9 /* Copying.swift in Sources */,
 				5E973F872E06709900D8F1D9 /* ViewController.swift in Sources */,
